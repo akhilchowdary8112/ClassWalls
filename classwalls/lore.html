@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>ClassWalls - Login/Register</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="lorestyle.css">
+</head>
+<body>
+<div class="form">
+<div class="bb">
+<div id="b"></div>
+<button type="button" class="tb" onclick="login()"><b>Login</b></button>
+<button type="button" class="tb" onclick="register()"><b>Register</b></button>
+</div>
+<form id="login"  action="val.php" method="post" class="ig">
+<input type="text"  class="if" placeholder="UserID" name="uname" required></input>
+<input type="text" class="if" placeholder="Password" name="psw" required></input>
+<input type="checkbox" class="cb"><span>Remember Password</span></input>
+<button type="submit" name="sub" class="sb"><b>Login</b></button>
+</form>
+<form id="register" action="signup.php" method="post" class="ig">
+<input type="text" class="if" placeholder="UserID" name="roll_no" required></input>
+<input type="email" class="if" placeholder="Email"  name="email" required></input>
+<input type="text" class="if" placeholder="Password" name="psw" required></input>
+<input type="checkbox" class="cb"><span>I agree to terms&conditions</span></input>
+<button type="submit" name="sub" class="sb"><b>Register</b></button>
+</form>
+</div>
+<script>
+var x = document.getElementById('login');
+
+var y = document.getElementById('register');
+
+var z = document.getElementById('b');
+
+function register()
+{
+
+x.style.left = "-400px";
+y.style.left = "50px";
+z.style.left = "110px";
+
+}
+function login()
+{
+
+x.style.left = "50px";
+y.style.left = "450px";
+z.style.left = "0px";
+
+}
+
+</script>
+</body>
+</html>
